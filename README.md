@@ -1,5 +1,10 @@
-# React COVID-19 Statistics
+# COVID-19 Statistics
 
+### Visual Representation of the website
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/69717044/163635949-58643630-49c6-44c4-b546-e237cdaf613e.jpg" width="90%">
+</p>
 
 ## In the project directory, you can run: `npm start`
 
