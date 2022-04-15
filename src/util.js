@@ -7,13 +7,13 @@ const casesTypeColors = {
     hex: "#FF6D00",
     rgb: "rgb(255, 109, 0)",
     half_op: "rgba(255, 109, 0, 0.4)",
-    multiplier: 300,
+    multiplier: 180,
   },
   recovered: {
     hex: "#39E054",
     rgb: "rgb(57, 224, 84 )",
     half_op: "rgba(57, 224, 84 , 0.4)",
-    multiplier: 250,
+    multiplier: 130,
   },
   deaths: {
     hex: "#FB2E2E",
@@ -49,7 +49,7 @@ export const showDataOnMap = (data, casesType = "cases") =>
         Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
       }
     >
-      <Popup>
+      <Popup className="info-container-popup">
         <div className="info-container">
           <div
             className="info-flag"

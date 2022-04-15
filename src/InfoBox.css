@@ -12,12 +12,28 @@
   border-top: 10px solid #39E054;
 }
 
+.infoBox--green {
+  border-color: #39E054;
+}
+
 .infoBox--red {
   border-color: #FB2E2E;
 }
 
+.infoBox--orange {
+  border-color: #FF6D00;
+}
+
 .infoBox__cases--green {
   color: #39E054 !important;
+}
+
+.infoBox__cases--red {
+  color: #FB2E2E !important;
+}
+
+.infoBox__cases--orange {
+  color: #FF6D00 !important;
 }
 
 .infoBox__cases {

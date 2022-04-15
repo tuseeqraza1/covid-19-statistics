@@ -52,11 +52,11 @@ body {
   justify-content: space-between;
 }
 
-.app__left {
+.app__right {
   flex: 0.9;
 }
 
-.app__right {
+.app__left {
   background-color: #2C394B !important;
   border-radius: 15px !important;
 }

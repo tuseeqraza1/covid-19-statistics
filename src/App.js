@@ -72,7 +72,15 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="app__left">
+      <Card className="app__left">
+        <CardContent>
+          <div className="app__information">
+            <h3>Live Cases by Country</h3>
+            <Table countries={tableData} />
+          </div>
+        </CardContent>
+      </Card>
+      <div className="app__right">
         <div className="app__header">
           <h1>COVID-19 Stats</h1>
           <FormControl className="app__dropdown">
@@ -93,7 +101,7 @@ const App = () => {
           <InfoBox
             onClick={(e) => setCasesType("cases")}
             title="Coronavirus Cases"
-            isRed
+            isOrange
             active={casesType === "cases"}
             cases={prettyPrintStat(countryInfo.todayCases)}
             total={numeral(countryInfo.cases).format("0.0a")}
@@ -120,15 +128,7 @@ const App = () => {
           center={mapCenter}
           zoom={mapZoom}
         />
-      </div>
-      <Card className="app__right">
-        <CardContent>
-          <div className="app__information">
-            <h3>Live Cases by Country</h3>
-            <Table countries={tableData} />
-          </div>
-        </CardContent>
-      </Card>
+      </div> 
     </div>
   );
 };
